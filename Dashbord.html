@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+        }
+        .sidebar {
+            width: 220px;
+            height: 100vh;
+            background: #2c3e50;
+            color: #fff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 20px;
+        }
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .sidebar a {
+            display: block;
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+            margin: 5px 0;
+            border-radius: 4px;
+        }
+        .sidebar a:hover {
+            background: #34495e;
+        }
+        .main-content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+        .topbar {
+            background: #fff;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            flex: 1;
+            min-width: 200px;
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="sidebar">
+    <h2>My Dashboard</h2>
+    <a href="#">Home</a>
+    <a href="#">Analytics</a>
+    <a href="#">Reports</a>
+    <a href="#">Settings</a>
+</div>
+
+<div class="main-content">
+    <div class="topbar">
+        <h1>Welcome Back!</h1>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Users</h3>
+            <p>1,245 Active</p>
+        </div>
+        <div class="card">
+            <h3>Sales</h3>
+            <p>$12,340 Today</p>
+        </div>
+        <div class="card">
+            <h3>Performance</h3>
+            <p>87% Efficiency</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
